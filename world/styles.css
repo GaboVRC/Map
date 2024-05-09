@@ -1,0 +1,48 @@
+body {
+  background-color: whitesmoke; 
+  background-image: url(Argentina.png);
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: coral;
+}
+
+svg{
+  height: 90vh;
+}
+
+path{
+  fill: #4c85bf ;
+  stroke: whitesmoke ;
+  stroke-width: 1;
+}
+
+path:hover{
+  fill: #164f88 ;
+  stroke: rgb(192, 192, 192) ;
+  stroke-width: 0.5;
+}
+
+@keyframes izquierda {
+  50%{
+    transform: scale(0.5);
+    transform: translateX(20vw);
+  }
+}
+
+@keyframes derecha {
+  50%{
+    transform: scale(0.5);
+    transform: translateX(-20vw);
+  }
+}
+
+#left{
+  animation: izquierda 3s;
+}
+
+#right{
+  animation: derecha 3s;
+}
